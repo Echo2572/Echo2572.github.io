@@ -25,17 +25,22 @@
     </nav>
     <main>
         <section class="card">
-            <h2>项目名称 A</h2>
-            <p><strong>时间：</strong>2024年</p>
-            <p><strong>来源：</strong>毕业设计</p>
-            <p><strong>类型：</strong>多模态关系抽取系统</p>
-            <p><strong>描述：</strong>使用ViT+BERT+Transformer对图文关系进行抽取，实现可视化展示。</p>
+            <h2>基于语义对齐的多模态关系抽取方法设计与实现</h2>
+            <p>
+                针对图像与文本实体间语义不匹配的问题，本项目重点实现了多模态实体的语义对齐。利用BERT提取文本特征，CLIP提取图像特征，并基于特征生成图像视觉提示以增强语义对齐效果，同时利用Transformer的Cross-Attention机制进行跨模态特征融合，并通过Softmax计算关系预测概率。在MNRE数据集上进行训练与评估，完成了多模态级别的关系预测。
+            </p>
         </section>
         <section class="card">
-            <h2>项目名称 B</h2>
-            <p><strong>时间：</strong>2023年</p>
-            <p><strong>来源：</strong>实习项目</p>
-            <p><strong>描述：</strong>基于Vue和Spring Boot开发企业级数据展示平台。</p>
+            <h2>基于DQN算法的红绿灯动态配时系统</h2>
+            <p>
+                针对传统信号灯固定配时方法效率低下的问题，本项目采用Deep Q-Network实现基于DRL的动态配时优化。Agent通过ε-greedy策略选择配时方案，并与交通流状态一同输入模型，与环境的交互过程中训练学习，并结合经验回放和目标网络增强训练稳定性和收敛性，用平均延误时间作为优化目标，使Agent选择最优配时方案，实现智能信号灯动态控制。
+            </p>
+        </section>
+        <section class="card">
+            <h2>基于U-Net的眼底视网膜血管分割</h2>
+            <p>
+                为了增强医学图像分割的效果，本项目使用U-Net架构实现对眼底视网膜图像中血管的自动分割。通过其对称编码器-解码器结构以及Skip Connection机制，能够实现多尺度特征提取。此外对模型进行了优化，修改模型结构至U-Net++，进一步融合多层特征，实现高效准确的血管提取。
+            </p>
         </section>
     </main>
 </body>
